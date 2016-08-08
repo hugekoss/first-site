@@ -1,0 +1,64 @@
+.header__txt{
+    @media (max-width:740px){
+        top:0;
+    }
+}
+
+//responsive menu header-style
+@media (max-width:992px) {
+		.header__menu{
+			position:relative;
+		}
+		.main-nav-trigger{
+			display:inline-block;
+			float:right;
+			position:absolute;
+			right:40px;
+			top:13px;
+		}
+			.header__nav__list{
+				display:none;
+				width:inherit;
+				padding:0;
+				margin:0;
+				background:rgba(126,141,143, .8);
+				li{
+				width:100%;
+				text-align:center;
+				&.active:after{
+					display:none;
+				}
+				&:hover:after{
+					display:none;
+				}
+			}
+		}
+
+	
+}//media 992
+////responsive menu header-style
+
+///centering img about__stn
+@media (max-width:992px) {
+	.about__stn{
+		.container-fluid{
+			padding:0px;
+			[class^="col-"]{
+				padding:0px;
+			}
+		}
+		img{
+			display:block;
+			margin:0 auto;
+			border-radius:5px;
+		}
+	}
+}//media 992
+//centering img about__stn
+
+///centering stn-headings
+@media(max-width:992px) {
+	.about__txt, .skills__stn, .education__txt, .contact__txt{text-align:center;}
+}//media 992
+///centering stn-headings
+
